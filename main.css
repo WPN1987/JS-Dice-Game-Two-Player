@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: grey;
+} 
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: grey;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+} 
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "instruct instruct instruct instruct"
+    "diceArea diceArea diceArea2 diceArea2"  
+    "playerOne playerOne playerTwo playerTwo"
+    "gameButtons gameButtons gameButtons2 gameButtons2" 
+    "status status status2 status2"; 
+    grid-gap:10px;   
+    background-color:grey; 
+    height:90%; 
+    width:90%; 
+}
+.header{
+    grid-area: header;
+    background-color: #29A6C7;
+    height:200px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: Monoton; 
+    font-size: 100px; 
+    color: #F8A33F;
+    text-shadow: 3px 3px grey; 
+    border-radius: 25px 25px 0px 0px;
+    
+}  
+
+.playerOne{
+    grid-area: playerOne;
+    background-color: #F8A33F; 
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Orbitron;
+    font-size: 25px; 
+    color: #29A6C7; 
+   
+} 
+
+.playerTwo{
+    grid-area: playerTwo;
+    background-color: #F8A33F; 
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Orbitron;
+    font-size: 25px; 
+    color: #29A6C7; 
+}
+.instruct{
+    grid-area: instruct;
+    background-color:#F8A33F;
+    height: 120px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    font-family: Orbitron;
+    font-size: 15px;  
+    color: #29A6C7;
+    
+}  
+
+.diceArea{
+    grid-area: diceArea;
+    background-color:#29A6C7; 
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+} 
+
+.diceArea2{
+    grid-area: diceArea2;
+    background-color:#29A6C7; 
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+  
+
+#die1{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: grey; 
+    border: 5px solid #F8A33F; 
+    border-radius: 50px 50px 50px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+} 
+
+#die2{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: grey; 
+    border: 5px solid #F8A33F; 
+    border-radius: 50px 50px 50px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+#diceText{
+    font-family: Orbitron;
+    font-size: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #F8A33F; 
+    padding: 15px; 
+} 
+
+#diceText2{
+    font-family: Orbitron;
+    font-size: 35px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #F8A33F; 
+    padding: 15px; 
+}
+
+.gameButtons{
+    grid-area: gameButtons;
+    background-color:#F8A33F;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+} 
+
+
+.gameButtons2{
+    grid-area: gameButtons2;
+    background-color:#F8A33F;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+} 
+
+#button{
+    display: block;
+    height: 50px;
+    width: 100px; 
+    color: #F8A33F; 
+    border: 5px solid #29A6C7;
+    background-color: grey; 
+    border-radius:10px 10px 10px 10px; 
+} 
+
+
+#button2{
+    display: block;
+    height: 50px;
+    width: 100px; 
+    color: #F8A33F; 
+    border: 5px solid #29A6C7;
+    background-color: grey; 
+    border-radius:10px 10px 10px 10px; 
+} 
+
+#resetButton{
+    display: block;
+    height: 50px;
+    width: 100px; 
+    color: #F8A33F; 
+    border: 5px solid #29A6C7;
+    background-color: grey; 
+    border-radius:10px 10px 10px 10px; 
+    position: relative;
+    left: 50px;      
+} 
+
+#resetButton2{
+    display: block;
+    height: 50px;
+    width: 100px; 
+    color: #F8A33F; 
+    border: 5px solid #29A6C7;
+    background-color: grey; 
+    border-radius:10px 10px 10px 10px; 
+    position: relative;
+    left: 50px;      
+} 
+
+.status{
+    grid-area: status; 
+    background-color: #29A6C7;
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: Orbitron;
+    font-size: 25px;
+    color: #F8A33F; 
+    border-radius: 0px 0px 0px 25px;
+} 
+
+.status2{
+    grid-area: status2; 
+    background-color: #29A6C7;
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: Orbitron;
+    font-size: 25px;
+    color: #F8A33F; 
+    border-radius: 0px 0px 25px 0px;
+}
+
+@media (max-width: 900px) {
+    .gridContainer {
+        grid-template-areas: 
+        "header header header"
+        "instruct instruct instruct"
+        "diceArea diceArea diceArea"  
+        "playerOne playerOne playerOne"
+        "gameButtons gameButtons gameButtons"
+        "status status status"
+        "diceArea2 diceArea2 diceArea2"
+        "playerTwo playerTwo playerTwo"
+        "gameButtons2 gameButtons2 gameButtons2"
+        "status2 status2 status2" ;
+    }
+    .header{
+        font-size: 65px; 
+    } 
+    .status{
+        border-radius: 0px 0px 0px 0px; 
+    } 
+
+    .status2 {
+        border-radius: 0px 0px 25px 25px; 
+    }
+} 
+
+@media (max-width: 500px) {
+    .gridContainer {
+        grid-template-areas: 
+        "header header"
+        "instruct instruct"
+        "diceArea diceArea"  
+        "playerOne playerOne"
+        "gameButtons gameButtons"
+        "status status"
+        "diceArea2 diceArea2"  
+        "playerTwo playerTwo"
+        "gameButtons2 gameButtons2"
+        "status2 status2"; 
+    }
+    .header{
+        font-size: 40px; 
+    } 
+    .instruct{
+        font-size: 10px;
+    }
+} 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WPN Dice Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">  
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Orbitron" rel="stylesheet"> 
+  
+</head>
+<body> 
+<div class = "wrapper">
+    <div class = "gridContainer">
+         <div class = "header"> WPN Dice Game </div> 
+         <div class = "playerOne"> Player One </div>
+         <div class = "playerTwo"> Player Two </div>
+         <div class = "instruct"> First Player to score 20 by rolling the dice wins the game. 
+                <br> If you roll a 1 then its game over and the other player wins.
+                <br> If you score more than 20 you go bust and it is game over and the other player wins. 
+        </div> 
+        <div class = "diceArea"> <div id = "die1"> <div id = "diceText"> Player One <br> Start </div> </div> </div>
+        <div class = "diceArea2"> <div id = "die2"> <div id = "diceText2"> Player Two <br> Start </div> </div> </div> 
+        <div class = "gameButtons"> <button id = "button" onclick = "rollDice1()"> Roll Dice </button>  
+                    <button id = "resetButton" onclick = "resetButton()"> Reset Score </button> 
+        </div> 
+
+        <div class = "gameButtons2"> <button id = "button2" onclick = "rollDice2()"> Roll Dice </button> 
+            <button id = "resetButton2" onclick = "resetButton2()"> Reset Score </button> 
+        </div> 
+
+        <div class = "status" id = "status"> </div> 
+        <div class = "status2" id = "status2"> </div> 
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
